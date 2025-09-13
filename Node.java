@@ -1,4 +1,4 @@
-public class Node<E> {
+public class Node<E> implements Position<E> {
     private E element; // an element stored at this node
     private Node<E> parent; // a reference to the parent node (if any)
     private Node<E> left; // a reference to the left child (if any)
@@ -43,5 +43,9 @@ public class Node<E> {
 
     public void setRight(Node<E> rightChild) {
         right = rightChild;
+    }
+
+    public boolean hasChildren() {
+        return (left != null || right != null);
     }
 } 
