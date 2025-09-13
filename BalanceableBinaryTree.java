@@ -1,6 +1,3 @@
-
-// Assuming LinkedBinaryTree, Entry, Position, and Node are defined elsewhere in your project
-
 public class BalanceableBinaryTree<K,V> extends LinkedBinaryTree<Entry<K,V>> {
 
 	//-------------- nested BSTNode class --------------

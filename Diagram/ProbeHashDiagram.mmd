@@ -1,0 +1,27 @@
+graph TD
+    subgraph G["Hash Table Array [size=11]"]
+        0["0"]
+        1["1"]
+        2["2: 24"]
+        3["3: 37"]
+        4["4: 4"]
+        5["5: 26"]
+        6["6"]
+        7["7"]
+        8["8: 33"]
+        9["9"]
+        10["10: 22"]
+    end
+
+    subgraph G1["Insertion Process"]
+        A["22 % 11 = 0 → slot 10"]
+        B["33 % 11 = 0 → probe to 8"]
+        C["4 % 11 = 4 → slot 4"]
+        D["15 % 11 = 4 → probe to 2"]
+        E["26 % 11 = 4 → probe to 5"]
+        F["37 % 11 = 4 → probe to 3"]
+    end
+    A --> B --> C --> D --> E --> F
+    G1 --> G
+
+  
